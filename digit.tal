@@ -1,0 +1,11 @@
+|00 @System $0f &state
+|10 @Console $8 &write
+
+%EMIT { .Console/write DEO }
+
+%PRINT_DIGIT { LIT '0 ADD EMIT }
+
+|0100 #05 PRINT_DIGIT
+#0a EMIT
+
+#01 .System/state DEO

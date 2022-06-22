@@ -1,0 +1,16 @@
+
+|00 @System $0f &state
+|10 @Console $8 &write
+
+( DEO is device out )
+%EMIT { .Console/write DEO }
+
+|0100
+#0a
+LIT 'o
+LIT 'l
+LIT 'l
+LIT 'e
+LIT 'h
+EMIT EMIT EMIT EMIT EMIT EMIT
+#01 .System/state DEO
